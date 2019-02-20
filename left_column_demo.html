@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+    <meta content="text/html" http-equiv="content-type" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>测试测试</title>
+    <style>
+        body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; letter-spacing: 0.6px; font-weight: normal}
+        html,body {height:100%; width:100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif; font-size: 12px; color: #28334B;}
+        #body{
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div id="body">
+        <!-- 左侧栏开始 -->
+        <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+        <link rel="stylesheet" type="text/css" href="css/left_column.css">
+        <div class="product-lists">
+            <div class="product-text">
+                <label></label>
+            </div>
+    
+            <!-- <% foreach from=$systemshow item=system %>
+            <div class="left_icon <% if $system[sys] eq 'kefu' %>active<%/if%>" name="<%$system[sys]%>">
+                <a href="<% $system[url] %>"><img src="<% $system[img] %>" /></a>
+                <span class="hover_remind"><% $system[name] %></span>
+            </div>
+            <% /foreach %> -->
+            <div class="left_icon" name="">
+                <a href="../go_new2.php?arg=p10034819_10040139&sys=mykf"><img src="http://s0.up.53kf.com/g1/M00/00/01/wKhvsVluCo2EdtVrAAAAAA9Fuic916.png" /></a>
+                <span class="hover_remind">我的快服</span>
+            </div>
+            <div class="left_icon" name="">
+                <a href="../go_new2.php?arg=p10013099_10104027&sys=group"><img src="http://fastdfs.71baomu.com/g1/M00/00/0C/euM6sFmeRWeECxQKAAAAACRmaO0084.png" /></a>
+                <span class="hover_remind">账号管家</span>
+            </div>
+            <div class="left_icon active" name="kefu">
+                <a href="javascript:;"><img src="http://s0.up.53kf.com/g1/M00/00/01/wKhvsFluASKEE9dUAAAAACBtce4142.png" /></a>
+                <span class="hover_remind">客服系统</span>
+            </div>
+            <div class="left_icon" name="">
+                <a href="../go_new2.php?arg=p10034819_10040139&sys=shouzhi"><img src="http://s0.up.53kf.com/g1/M00/00/01/wKhvsFluAZ-ERSTdAAAAAAT3-pU905.png" /></a>
+                <span class="hover_remind">收支管理</span>
+            </div>
+            <div class="left_icon" name="">
+                <a href="../go_new2.php?arg=p10034819_10040139&sys=crm"><img src="http://s0.up.53kf.com/g1/M00/00/01/wKhvsVluAO6EOqenAAAAAL1hoLU773.png" /></a>
+                <span class="hover_remind">回头客CRM</span>
+            </div>
+    
+            <!-- <div class="more_list left_icon <%if $more_icon%>active<%/if%>">
+                <i class="left_main_icon icon iconfont icon-daohanglan-gengduochanpin"></i>
+                <div class="hidden_list" style="display: none;">
+                    <% foreach from=$systemhide item=system %>
+                    <div <% if $system[active]%>class="active"<%/if%>>
+                        <a href="<% $system[url] %>" title="<% $system[name] %>"><img src="<% $system[img] %>" /></a>
+                    </div>
+                    <% /foreach %>
+                </div>
+            </div> -->
+            <div class="more_list left_icon">
+                <i class="left_main_icon icon iconfont icon-daohanglan-gengduochanpin"></i>
+                <div class="hidden_list" style="display: none;">
+                    <div>
+                        <a href="../go_new2.php?arg=p10034819_10040139&sys=inner" title="企业通讯"><img src="http://s0.up.53kf.com/g1/M00/00/01/wKhvsFluARSEYUa_AAAAAODyxmM535.png" /></a>
+                    </div>
+                    <div>
+                        <a href="../go_new2.php?arg=p10034819_10040139&sys=facilitator" title="服务商"><img src="http://s0.up.53kf.com/g1/M00/00/02/wKhvsVnNm7aEIvwnAAAAANZCFyw656.png" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <%if !$is_facilitator %>
+            <div class="makemoney left_icon">
+                <a class="left_main_icon icon iconfont icon-woyaozhengqian" href="<% $union_url %>://<% $talk_host %>/go_new2.php?arg=<%$arg%>&sys=mykf&special=makemoney" target="_blank"></a>
+                <span class="hover_remind" style="display: none;">我要赚钱</span>
+            </div>
+            <%/if%> -->
+            <div class="makemoney left_icon">
+                <a class="left_main_icon icon iconfont icon-woyaozhengqian" href="#" target="_blank"></a>
+                <span class="hover_remind" style="display: none;">我要赚钱</span>
+            </div>
+
+            <div class="api_list left_icon">
+                <i class="left_main_icon icon iconfont icon-daohanglan-wendang"></i><span></span>
+                <div class="api_info" style="display: none;">
+                    <p class="api_title">营销手册</p>
+                    <p class="api_api"><a href="https://www.53kf.com/file/53KF-DMP.pdf" target="_blank">DMP 精准营销</a></p>
+                    <p class="api_api"><a href="https://api.53kf.com/web/#/12" target="_blank">抽奖活动-号码收集</a></p>
+                    <p class="api_api"><a href="https://api.53kf.com/web/#/14" target="_blank">微信群发-营销利器</a></p>
+                    <p class="api_title" style="margin-top:10px;">产品使用文档</p>
+                    <p class="api_api"><a href="https://api.53kf.com/web/#/9" target="_blank">云客服产品文档</a></p>
+                    <p class="api_api"><a href="https://www.53kf.com/file/baidu_toutiao.pdf" target="_blank">百度、今日头条绑定流程</a></p>
+                    <p class="api_title" style="margin-top:10px;">开发指南</p>
+                    <p class="api_api"><a href="https://api.53kf.com/web/#/5" target="_blank">云客服开发者文档</a></p>
+                    <p class="api_api"><a href="https://api.53kf.com/web/#/8" target="_blank">iOS SDK 文档</a></p>
+                    <p class="api_api"><a href="https://api.53kf.com/web/#/7?page_id=247" target="_blank">Android SDK 文档</a></p>
+                    <p class="api_api"><a href="https://api.53kf.com/web/#/11" target="_blank">商城对接-商品会员信息</a></p>
+                </div>
+            </div>
+            <!-- <div class="guest left_icon">
+                <b></b>
+                <div class="guest_info" style="display: none;">
+                    <p title="<%$user_name%>"><%$user_name%></p>
+                    <p title="<%$company_name%>"><%$company_name%></p>
+                    <p class="exit"><a style="color:#fff" onclick="return nlogout()" href="../setting/chat_msg_record.php?action=logout&arg=<%$arg%>">退出</a></p>
+                </div>
+            </div> -->
+            <div class="guest left_icon">
+                <b></b>
+                <div class="guest_info" style="display: none;">
+                    <p title="测试账号">测试账号</p>
+                    <p title="测试公司">测试公司</p>
+                    <p class="exit"><a style="color:#fff" onclick="return nlogout()" href="../setting/chat_msg_record.php?action=logout&arg=<%$arg%>">退出</a></p>
+                </div>
+            </div>
+
+            <!-- <div class="kf_help left_icon">
+                <i class="left_main_icon icon iconfont icon-daohanglan-zhuanshukefu"></i>
+                <span></span>
+                <div class="hidden_help" style="display: none;">
+                    <div class="help_top">
+                        <h6>我的专属客服经理</h6>
+                        <p><%$exclusivekf[nick_name]%></p>
+                    </div>
+                    <ul>
+                        <li>
+                            在线客服咨询
+                            <a class="kfConsultation">咨询</a>
+                            <i class="icon iconfont icon-zhuanshukefu-kefu"></i>
+                        </li>
+                        <%if $exclusivekf[qq]%><li>
+                            <%$exclusivekf[qq]%>
+                            <a href="<% $union_url %>://wpa.qq.com/msgrd?V=1&uin=<%$exclusivekf[qq]%>&exe=qq&Site=qq&menu=yes">咨询</a>
+                            <i class="icon iconfont icon-zhuanshukefu-QQ"></i>
+                        </li><%/if%>
+                        <%if $exclusivekf[phone_num]%><li>
+                            <%$exclusivekf[phone_num]%>
+                            <i class="icon iconfont icon-zhuanshukefu-guhua"></i>
+                        </li><%/if%>
+                        <li>
+                            400-611-2183
+                            <i class="icon iconfont icon-zhuanshukefu-shouji"></i>
+                        </li>
+                        <li>
+                            建议 （至产品部门）
+                            <a href="<% $union_url %>://wj.qq.com/s/2550671/3aa8" target="_blank">反馈</a>
+                            <i class="icon iconfont icon-zhuanshukefu-jianyi"></i>
+                        </li>
+                        <li style="background:rgb(240,242,245);padding-left:15px;height:65px;padding-top:5px">
+                            <div style="float: left;width:130px;color:#62778C;font-size:12px;line-height:18px;margin-top:12px">微信扫一扫，了解更多 客服讯息及相关福利</div>
+                            <div class="wechat_saoyisao"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="kf_help left_icon">
+                <i class="left_main_icon icon iconfont icon-daohanglan-zhuanshukefu"></i>
+                <span></span>
+                <div class="hidden_help" style="display: none;">
+                    <div class="help_top">
+                        <h6>我的专属客服经理</h6>
+                        <p>未分配</p>
+                    </div>
+                    <ul>
+                        <li>
+                            在线客服咨询
+                            <a class="kfConsultation">咨询</a>
+                            <i class="icon iconfont icon-zhuanshukefu-kefu"></i>
+                        </li>
+                        <li>
+                            在线客服咨询
+                            <a href="#">咨询</a>
+                            <i class="icon iconfont icon-zhuanshukefu-QQ"></i>
+                        </li>
+                        <li>
+                            400-611-2183
+                            <i class="icon iconfont icon-zhuanshukefu-guhua"></i>
+                        </li>
+                        <li>
+                            400-611-2183
+                            <i class="icon iconfont icon-zhuanshukefu-shouji"></i>
+                        </li>
+                        <li>
+                            建议 （至产品部门）
+                            <a href="https://wj.qq.com/s/2550671/3aa8" target="_blank">反馈</a>
+                            <i class="icon iconfont icon-zhuanshukefu-jianyi"></i>
+                        </li>
+                        <li style="background:rgb(240,242,245);padding-left:15px;height:65px;padding-top:5px">
+                            <div style="float: left;width:130px;color:#62778C;font-size:12px;line-height:18px;margin-top:12px">微信扫一扫，了解更多 客服讯息及相关福利</div>
+                            <div class="wechat_saoyisao"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="js/left_column.js"></script>
+        <!-- 左侧栏结束 -->
+    </div>
+</body>
+</html>
